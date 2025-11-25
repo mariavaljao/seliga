@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Vendas - Loja Exemplo</title>
+    <title>Café Aroma - Cafeteria Artesanal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabeçalho com Menu e Logo -->
+    <!-- Cabeçalho -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo da Loja Exemplo">
+            <img src="https://via.placeholder.com/150x50/8B4513/FFFFFF?text=Café+Aroma" alt="Logo Café Aroma">
         </div>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -23,28 +24,71 @@
 
     <!-- Corpo do Site -->
     <main>
-        <section id="home">
-            <h1>Bem-vindo à Loja Exemplo</h1>
-            <p>Texto sobre o estabelecimento: Somos uma loja online especializada em produtos tecnológicos e acessórios de alta qualidade. Oferecemos entrega rápida e garantia em todos os itens.</p>
-            <p>Texto sobre o produto vendido: Nosso destaque é o Smartphone Modelo X, com câmera de 48MP e bateria de longa duração. Ideal para quem busca inovação.</p>
-            <img src="produto1.jpg" alt="Imagem do Produto 1 - Smartphone">
-            <img src="produto2.jpg" alt="Imagem do Produto 2 - Acessório">
-            <!-- Propaganda Opcional (Banner) -->
-            <div class="banner-propaganda">
-                <img src="banner.jpg" alt="Banner de Propaganda - Desconto Especial">
-                <p>Propaganda: Aproveite 20% de desconto em compras acima de R$200! Código: DESCONTO20</p>
+        <!-- Banner -->
+        <section id="banner" class="banner">
+            <img src="https://via.placeholder.com/1200x400/654321/FFFFFF?text=Bem-vindo+ao+Café+Aroma" alt="Banner Café Aroma">
+            <div class="banner-text">
+                <h1>Desfrute do Melhor Café Artesanal</h1>
+                <p>Experimente nossos grãos selecionados e doces irresistíveis.</p>
             </div>
+        </section>
+
+        <!-- Sobre o Estabelecimento -->
+        <section id="sobre" class="sobre">
+            <h2>Sobre o Café Aroma</h2>
+            <p>O Café Aroma é uma cafeteria artesanal localizada no coração da cidade, dedicada a oferecer cafés de alta qualidade, feitos com grãos selecionados de regiões especiais. Nossos produtos são preparados com paixão, utilizando ingredientes frescos e sustentáveis. Venha nos visitar e sinta o aroma único que só o Café Aroma oferece!</p>
+            <img src="https://via.placeholder.com/600x300/8B4513/FFFFFF?text=Interior+da+Cafeteria" alt="Interior da Cafeteria">
+        </section>
+
+        <!-- Produtos -->
+        <section id="produtos" class="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="produto-grid">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300x200/654321/FFFFFF?text=Café+Expresso" alt="Café Expresso">
+                    <h3>Café Expresso</h3>
+                    <p>R$ 5,00</p>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300x200/654321/FFFFFF?text=Bolo+de+Chocolate" alt="Bolo de Chocolate">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>R$ 8,00</p>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300x200/654321/FFFFFF?text=Capuccino" alt="Capuccino">
+                    <h3>Capuccino</h3>
+                    <p>R$ 7,00</p>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Propaganda Opcional -->
+        <section class="propaganda">
+            <h2>Promoção Especial!</h2>
+            <p>Compre 2 cafés e ganhe 1 bolo grátis. Aproveite enquanto dura!</p>
+            <img src="https://via.placeholder.com/400x200/FFD700/000000?text=Promoção" alt="Promoção">
         </section>
     </main>
 
     <!-- Rodapé -->
     <footer>
-        <p>Contato: (11) 99999-9999 | contato@lojaexemplo.com</p>
-        <p>Site criado por: João Silva</p>
-        <div class="redes-sociais">
-            <a href="https://facebook.com/lojaexemplo" target="_blank">Facebook</a> |
-            <a href="https://instagram.com/lojaexemplo" target="_blank">Instagram</a> |
-            <a href="https://twitter.com/lojaexemplo" target="_blank">Twitter</a>
+        <div class="footer-content">
+            <div class="contato">
+                <h3>Contato</h3>
+                <p>Endereço: Rua das Cafeterias, 123 - Centro</p>
+                <p>Telefone: (11) 99999-9999</p>
+                <p>Email: contato@cafearoma.com</p>
+            </div>
+            <div class="criador">
+                <p>Site criado por: João Silva</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>Redes Sociais</h3>
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+            </div>
         </div>
     </footer>
 
