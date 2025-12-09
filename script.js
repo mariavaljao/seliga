@@ -1,15 +1,22 @@
-// script.js
-// Simples funcionalidade para o botão de comprar (alerta)
-document.querySelectorAll('.comprar').forEach(button => {
+document.querySelectorAll('.adicionar').forEach(button => {
     button.addEventListener('click', () => {
-        alert('Produto adicionado ao carrinho!');
+        const produto = button.getAttribute('data-produto');
+        const preco = parseFloat(button.getAttribute('data-preco'));
+        carrinho.push({ produto, preco });
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        contador.textContent = carrinho.length;
+        alert($,{produto} ,adicionado, ao ,carrinho,);
     });
 });
 
-// Menu responsivo (opcional, para mobile)
-const menu = document.querySelector('.menu');
-const toggleMenu = () => {
-    menu.classList.toggle('active');
-};
+// Exibir carrinho (simples alerta; expanda para uma modal)
+document.getElementById('carrinho-btn').addEventListener('click', () => {
+    if (carrinho.length === 0) {
+        alert('Carrinho vazio!');
+    } else {
+        let total = carrinho.reduce((sum, item) => sum + item.preco, 0);
+         IntersectionObserver, $,carrinho,map(item , item,produto )
+    }
+});
 
-// Adicionar um botão hambúrguer se necessário (não incluído no HTML, mas pode ser adicionado)
+        
